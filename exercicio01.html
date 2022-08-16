@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="container">
+    <form action="formulario-aula" method="post">
+        <div>
+            <h1>AVALIE SUA EXPERÊNCIA!</h1>
+            <label for="nome">Nome </label>
+            <input type="text" id="nome" placeholder="Digite seu nome" autofocus minlength="10" required>
+        </div>
+        <div>
+            <label for="email">E-mail </label>
+            <input type="email" id="email" placeholder="nome123@gmail.com" required>
+        </div>
+        <div>
+            <label for="data">Data de nascimento </label>
+            <input type="date" id="data" required>
+        </div>
+        <div>
+            <label for="tel">Telefone </label>
+            <input type="tel" id="tel" placeholder="11912345678" minlength="9" required>
+        </div>
+        <div>
+            <label for="endereco">Endereço </label>
+            <input type="text" id="end" required>
+        </div>
+        <div>
+            <label for="cep">CEP </label>
+            <input type="text" id="cep" placeholder="00000-000" required pattern="\d{5}-?\d{3}"/>
+        </div>
+        <hr>
+        <div>
+            <label for="tel">Qual seu navegador preferido? </label>
+            <input type="text" name="browser" list="browsers">
+            <datalist  id="browsers">
+                <option value="Internet Explorer"></option>
+                <option value="Firefox"></option>
+                <option value="Safari"></option>
+                <option value="Google Chrome"></option>
+                <option value="Opera"></option>
+            </datalist>
+        </div>
+        <div>
+            <label for="tel">Qual sua cor preferida? </label>
+            <input type="text" name="color" list="colors">
+            <datalist  id="colors">
+                <option value="Branco"></option>
+                <option value="Preto"></option>
+                <option value="Azul"></option>
+                <option value="Amarelo"></option>
+                <option value="Rosa"></option>
+                <option value="Verde"></option>
+                <option value="Roxo"></option>
+                <option value="Cinza"></option>
+                <option value="Marrom"></option>
+                <option value="Vermelho"></option>
+            </datalist>
+        </div>
+        <div>
+            <label for="tel">Você gosta de ler? </label>
+            <input type="text" name="read" list="reads">
+            <datalist  id="reads">
+                <option value="Sim"></option>
+                <option value="Não"></option>
+            </datalist>
+        </div>
+        <hr>
+        <div>
+            <label for="comment">Deixe um comentário, dúvida ou sugestão: </label>
+            <input type="text" name="comment" size="100"/>
+        </div>
+        <br>
+        <button type="submit">Enviar!</button>
+    </form>
+    </div>
+</body>
+</html>
